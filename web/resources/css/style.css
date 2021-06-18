@@ -243,7 +243,7 @@ ul.icon1 {
 .icon1 li:hover > a {
 	color: #fafafa;
 }
-*html .icon1 li a:hover { /* IE6 only */
+.html .icon1 li a:hover { /* IE6 only */
 	color: #fafafa;
 }
 .icon1 ul {
@@ -2018,9 +2018,9 @@ h4.m_11 {
 	 width:50px !important;
 	 height:50px !important;
   }
-  .register-top-grid(
-  	margin-bottom:20px;
-  )
+ .register-top-grid{
+  	 margin-bottom:20px;
+ }
   .nav {
 	top: 66px;
 	right: 8px;
