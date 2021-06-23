@@ -1,19 +1,14 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Librería ACME</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link href="resources/css/style.css" rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <script src="resources/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="resources/css/fwslider.css" media="all">
-    <script src="resources/js/jquery-ui.min.js"></script>
-    <script src="resources/js/fwslider.js"></script>
-    <script type="text/javascript">
+<title>Login</title>
+<link href="resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="resources/css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="resources/js/jquery.min.js"></script>
+<script type="text/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
 
@@ -22,14 +17,14 @@
             });
                         
             $(".dropdown dd ul li a").click(function() {
-                var text = $(this).jsp();
-                $(".dropdown dt a span").jsp(text);
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
                 $(".dropdown dd ul").hide();
-                $("#result").jsp("Selected value is: " + getSelectedValue("sample"));
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
             });
                         
             function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").jsp();
+                return $("#" + id).find("dt a span.value").html();
             }
 
             $(document).bind('click', function(e) {
@@ -44,11 +39,9 @@
             });
         });
      </script>
-</head>
-
+ </head>
 <body>
-
-    <div class="header">
+	<div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -61,7 +54,7 @@
                             <ul class="nav" id="nav">
                                 <li><a href="shop.jsp">Catálogo</a></li>
                                 <li><a href="team.jsp">Equipo de trabajo</a></li>
-                                <li><a href="company.jsp">Compañía</a></li>
+                                <li><a href="company.jsp">Compañia</a></li>
                                 <li><a href="contact.jsp">Contacto</a></li>
                                 <div class="clear"></div>
                             </ul>
@@ -102,8 +95,8 @@
                                             $12.00</span>
                                     </li>
                                     <div class="login_buttons">
-                                        <div class="check_button"><a href="checkout.jsp">Ver carrito</a></div>
-                                        <div class="login_button"><a href="login.jsp">Acceder</a></div>
+                                        <div class="check_button"><a href="checkout.jsp">Check out</a></div>
+                                        <div class="login_button"><a href="login.jsp">Login</a></div>
                                         <div class="clear"></div>
                                     </div>
                                     <div class="clear"></div>
@@ -116,71 +109,51 @@
             </div>
         </div>
     </div>
-
-    <div class="banner">
-        <!-- start slider -->
-        <div id="fwslider">
-            <div class="slider_container">
-                <div class="slide">
-                    <!-- Slide image -->
-                    <img src="resources/images/slider1.jpg" class="img-responsive" alt="" />
-                    <!-- /Slide image -->
-                    <!-- Texts container -->
-                </div>
-                <!-- /Duplicate to create more slides -->
-                <div class="slide">
-                    <img src="resources/images/slider2.jpg" class="img-responsive" alt="" />
-                </div>
-                <!--/slide -->
-            </div>
-            <div class="timers"></div>
-            <div class="slidePrev"><span></span></div>
-            <div class="slideNext"><span></span></div>
-        </div>
-        <!--/slider -->
-    </div>
-    <div class="main">
-        <div class="content-top">
-            <h2>Best Seller</h2>
-            <p>Descubre cuáles son los libros más vendidos con este rÃ¡nking de bestsellers</p>
-            <ul id="flexiselDemo3">
-                <li><img src="resources/images/book1.jpg" /></li>
-                <li><img src="resources/images/book2.jpg" /></li>
-                <li><img src="resources/images/book3.jpg" /></li>
-                <li><img src="resources/images/book4.jpg" /></li>
-                <li><img src="resources/images/book5.jpg" /></li>
-            </ul>
-            <h3>Los libros más vendidos</h3>
-            <script type="text/javascript">
-                $(window).load(function () {
-                    $("#flexiselDemo3").flexisel({
-                        visibleItems: 5,
-                        animationSpeed: 1000,
-                        autoPlay: true,
-                        autoPlaySpeed: 3000,
-                        pauseOnHover: true,
-                        enableResponsiveBreakpoints: true,
-                        responsiveBreakpoints: {
-                            portrait: {
-                                changePoint: 480,
-                                visibleItems: 1
-                            },
-                            landscape: {
-                                changePoint: 640,
-                                visibleItems: 2
-                            },
-                            tablet: {
-                                changePoint: 768,
-                                visibleItems: 3
-                            }
-                        }
-                    });
-                });
-            </script>
-            <script type="text/javascript" src="resources/js/jquery.flexisel.js"></script>
-        </div>
-    </div>
-
+    
+    
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="col-md-6">
+				 <div class="login-page">
+					<h4 class="title">Registrate con nosotros</h4>
+                                        <p>Si quieres comprar con nosotros da clic en el boton de crear cuenta para que te registres y poder disfrutar de todo nuestro catálogo de libros, es super fácil y gratis.<br><br><br><br></p>
+					<div class="button1">
+					   <a href="register.jsp"><input type="submit" name="Submit" value="Crear nueva cuenta"></a>
+					 </div>
+					 <div class="clear"></div>
+				  </div>
+				</div>
+				<div class="col-md-6">
+				 <div class="login-title">
+	           		<h4 class="title">Iniciar sesión</h4>
+					<div id="loginbox" class="loginbox">
+						<form action="" method="post" name="login" id="login-form">
+						  <fieldset class="input">
+						    <p id="login-form-username">
+						      <label for="modlgn_username">Email</label>
+						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <p id="login-form-password">
+						      <label for="modlgn_passwd">Contraseña</label>
+						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <div class="remember">
+							    <p id="login-form-remember">
+							   </p>
+							    <input type="submit" name="Submit" class="button" value="Iniciar"><div class="clear"></div>
+							 </div>
+						  </fieldset>
+						 </form>
+					</div>
+			      </div>
+				 <div class="clear"></div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+    
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -225,6 +198,5 @@
 
         </div>
     </div>
-</body>
-
+</body>	
 </html>

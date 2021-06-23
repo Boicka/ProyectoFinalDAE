@@ -28,14 +28,14 @@ and open the template in the editor.
             });
 
             $(".dropdown dd ul li a").click(function () {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
+                var text = $(this).jsp();
+                $(".dropdown dt a span").jsp(text);
                 $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+                $("#result").jsp("Selected value is: " + getSelectedValue("sample"));
             });
 
             function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
+                return $("#" + id).find("dt a span.value").jsp();
             }
 
             $(document).bind('click', function (e) {
@@ -60,15 +60,15 @@ and open the template in the editor.
                 <div class="col-md-12">
                     <div class="header-left">
                         <div class="logo">
-                            <a href="index.html"><img src="resources/images/logo.png" alt="" /></a>
+                            <a href="index.jsp"><img src="resources/images/logo.png" alt="" /></a>
                         </div>
                         <div class="menu">
                             <a class="toggleMenu" href="#"><img src="resources/images/nav.png" alt="" /></a>
                             <ul class="nav" id="nav">
-                                <li><a href="shop.html">CatÃ¡logo</a></li>
-                                <li><a href="team.html">Equipo de trabajo</a></li>
-                                <li><a href="company.html">CompaÃ±Ã­a</a></li>
-                                <li><a href="contact.html">Contacto</a></li>
+                                <li><a href="shop.jsp">Catálogo</a></li>
+                                <li><a href="team.jsp">Equipo de trabajo</a></li>
+                                <li><a href="company.jsp">Compañía</a></li>
+                                <li><a href="contact.jsp">Contacto</a></li>
                                 <div class="clear"></div>
                             </ul>
                             <script type="text/javascript" src="resources/js/responsive-nav.js"></script>
@@ -104,12 +104,12 @@ and open the template in the editor.
                                     <div class="clear"></div>
                                     <li class="list_img"><img src="resources/images/1.jpg" alt="" /></li>
                                     <li class="list_desc">
-                                        <h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                                        <h4><a href="#">Uzumaki</a></h4><span class="actual">1 x
                                             $12.00</span>
                                     </li>
                                     <div class="login_buttons">
-                                        <div class="check_button"><a href="checkout.html">Check out</a></div>
-                                        <div class="login_button"><a href="login.html">Login</a></div>
+                                        <div class="check_button"><a href="checkout.jsp">Check out</a></div>
+                                        <div class="login_button"><a href="login.jsp">Login</a></div>
                                         <div class="clear"></div>
                                     </div>
                                     <div class="clear"></div>
@@ -127,83 +127,78 @@ and open the template in the editor.
         <div class="shop_top">
             <div class="container">
                 <div class="row shop_box-top">
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic5.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book2.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
-                                <span class="new-label">New</span>
+                                <span class="new-label">Nuevo</span>
                             </span>
                             <span class="sale-box">
-                                <span class="sale-label">Sale!</span>
+                                <span class="sale-label">Oferta</span>
                             </span>
                             <div class="shop_desc">
-                                <h3><a href="#">aliquam volutp</a></h3>
-                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <h3><a href="#">Uzumaki</a></h3>
+                                <p>Uzumaki</p>
                                 <span class="reducedfrom">$66.00</span>
                                 <span class="actual">$12.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic6.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book1.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
-                                <span class="new-label">New</span>
+                                <span class="new-label">Nuevo</span>
                             </span>
                             <div class="shop_desc">
-                                <h3><a href="#">aliquam volutp</a></h3>
-                                <p>Lorem ipsum consectetuer adipiscing </p>
-                                <span class="actual">$12.00</span><br>
+                                <h3><a href="#">Craking</a></h3>
+                                <p>Craking </p>
+                                <span class="actual">$18.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic7.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book3.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
-                                <span class="new-label">New</span>
-                            </span>
-                            <span class="sale-box">
-                                <span class="sale-label">Sale!</span>
+                                <span class="new-label">Nuevo</span>
                             </span>
                             <div class="shop_desc">
-                                <h3><a href="#">aliquam volutp</a></h3>
-                                <p>Lorem ipsum consectetuer adipiscing </p>
-                                <span class="reducedfrom">$66.00</span>
-                                <span class="actual">$12.00</span><br>
+                                <h3><a href="#">Bajo un cielo escarlata</a></h3>
+                                <p>Bajo un cielo escarlata</p>
+                                <span class="actual">$22.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic8.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book4.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
-                                <span class="new-label">New</span>
+                                <span class="new-label">Nuevo</span>
                             </span>
                             <div class="shop_desc">
-                                <h3><a href="#">aliquam volutp</a></h3>
-                                <p>Lorem ipsum consectetuer adipiscing </p>
-                                <span class="reducedfrom">$66.00</span>
-                                <span class="actual">$12.00</span><br>
+                                <h3><a href="#">Mi vida feliz</a></h3>
+                                <p>Mi vida feliz </p>
+                                <span class="actual">$10.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic9.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book1.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
                                 <span class="new-label">New</span>
                             </span>
@@ -212,14 +207,14 @@ and open the template in the editor.
                                 <p>Lorem ipsum consectetuer adipiscing </p>
                                 <span class="actual">$12.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic10.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book5.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
                                 <span class="new-label">New</span>
                             </span>
@@ -231,14 +226,14 @@ and open the template in the editor.
                                 <p>Lorem ipsum consectetuer adipiscing </p>
                                 <span class="actual">$12.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic11.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book2.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
                                 <span class="new-label">New</span>
                             </span>
@@ -248,14 +243,14 @@ and open the template in the editor.
                                 <span class="reducedfrom">$66.00</span>
                                 <span class="actual">$12.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
                         </a></div>
-                    <div class="col-md-3 shop_box"><a href="single.html">
-                            <img src="resources/images/pic12.jpg" class="img-responsive" alt="" />
+                    <div class="col-md-3 shop_box"><a href="single.jsp">
+                            <img src="resources/images/book3.jpg" class="img-responsive" alt="" />
                             <span class="new-box">
                                 <span class="new-label">New</span>
                             </span>
@@ -268,8 +263,8 @@ and open the template in the editor.
                                 <span class="reducedfrom">$66.00</span>
                                 <span class="actual">$12.00</span><br>
                                 <ul class="buttons">
-                                    <li class="cart"><a href="#">Add To Cart</a></li>
-                                    <li class="shop_btn"><a href="#">Read More</a></li>
+                                    <li class="cart"><a href="#">Añadir al carrito</a></li>
+                                    <li class="shop_btn"><a href="#">Leer más...</a></li>
                                     <div class="clear"> </div>
                                 </ul>
                             </div>
@@ -296,16 +291,16 @@ and open the template in the editor.
                         <h4>Acerca de</h4>
                         <li><a href="#">Patrocinios</a></li>
                         <li><a href="#">Equipo de trabajo</a></li>
-                        <li><a href="#">CatÃ¡logo</a></li>
+                        <li><a href="#">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="footer_box">
-                        <h4>AtenciÃ³n al cliente</h4>
+                        <h4>Atención al cliente</h4>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#">Seguimiento de orden de compra</a></li>
                         <li><a href="#">Devoluciones</a></li>
-                        <li><a href="#">GarantÃ­a</a></li>
+                        <li><a href="#">Garantía</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
