@@ -128,7 +128,7 @@
 				 <div class="login-title">
 	           		<h4 class="title">Iniciar sesión</h4>
 					<div id="loginbox" class="loginbox">
-						<form action="" method="post" name="login" id="login-form">
+						<form action="ValidaUsuario" method="POST" name="login" id="login-form">
 						  <fieldset class="input">
 						    <p id="login-form-username">
 						      <label for="modlgn_username">Email</label>
@@ -138,13 +138,9 @@
 						      <label for="modlgn_passwd">Contraseña</label>
 						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
 						    </p>
-						    <div class="remember">
-							    <p id="login-form-remember">
-							   </p>
-							    <input type="submit" name="Submit" class="button" value="Iniciar"><div class="clear"></div>
-							 </div>
+                                                    <br><button class="button" type="submit" value="Iniciar">Iniciar</button><div class="clear"></div>
 						  </fieldset>
-						 </form>
+						</form>
 					</div>
 			      </div>
 				 <div class="clear"></div>
@@ -170,7 +166,7 @@
                         <h4>Acerca de</h4>
                         <li><a href="#">Patrocinios</a></li>
                         <li><a href="#">Equipo de trabajo</a></li>
-                        <li><a href="#">CatÃ¡logo</a></li>
+                        <li><a href="#">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -179,7 +175,7 @@
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#">Seguimiento de orden de compra</a></li>
                         <li><a href="#">Devoluciones</a></li>
-                        <li><a href="#">GarantÃ­a</a></li>
+                        <li><a href="#">Garantía</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -198,5 +194,6 @@
 
         </div>
     </div>
+    ${mensaje}
 </body>	
 </html>

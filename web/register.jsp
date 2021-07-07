@@ -114,20 +114,20 @@
         <div class="main">
             <div class="shop_top">
                 <div class="container">
-                    <form> 
+                    <form action="RegistraUsuario" method="POST"> 
                         <div class="register-top-grid">
                             <h3>INFORMACIÓN PERSONAL</h3>
                             <div>
                                 <span>Nombre(s)<label>*</label></span>
-                                <input type="text"> 
+                                <input type="text" name="nombre"> 
                             </div>
                             <div>
                                 <span>Apellidos<label>*</label></span>
-                                <input type="text"> 
+                                <input type="text" name="apellido" > 
                             </div>
                             <div>
                                 <span>Correo electrónico<label>*</label></span>
-                                <input type="text"> 
+                                <input type="text" name="email" > 
                             </div>
                             <div class="clear"> </div>
                             <a class="news-letter" href="#">
@@ -140,11 +140,11 @@
       
                             <div>
                                 <span>Contraseña<label>*</label></span>
-                                <input type="text">
+                                <input type="password" name="password" >
                             </div>
                             <div>
                                 <span>Confirmar Contraseña<label>*</label></span>
-                                <input type="text">
+                                <input type="password" name="password2">
                             </div>
                             <div class="clear"> </div>
                         </div>
