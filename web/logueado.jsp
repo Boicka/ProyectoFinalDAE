@@ -11,7 +11,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Welcome you are inside</h1>
+    <body onload="alerta('${mensaje}');">
+        <h1>Ya eres cliente de Librerias ACME</h1>
     </body>
+    <script type="text/javascript">
+        function alerta(mensaje) {
+            if(mensaje!=""){
+                alert(mensaje);
+            }
+        }
+    </script>
 </html>

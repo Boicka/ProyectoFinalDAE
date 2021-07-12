@@ -71,9 +71,10 @@ public class UsuarioDAO implements UsuarioDAOI {
         + "'"
         + nombre + "','"
         + apellidos + "','"
-        + email + "',"
-        + password + ")";
+        + email + "','"
+        + password + "')";
         //Ejecutar la sntencia
+        System.out.println(sql);//solo para depuracion
         smt = c.createStatement();
         smt.executeUpdate(sql);
         //Cerrar BD

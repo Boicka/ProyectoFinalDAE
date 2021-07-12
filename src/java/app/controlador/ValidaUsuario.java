@@ -91,7 +91,7 @@ public class ValidaUsuario extends HttpServlet {
                 // ----Invalida la sesión
                 sesion.invalidate();
             } else {
-                paginaRespuesta = "logueado.jsp";
+                paginaRespuesta = "shop.jsp";
 //                request.setAttribute("usuario", u);
                 // ---Agrega usuario al objeto "session"
 //                sesion.setAttribute("usuario", u);

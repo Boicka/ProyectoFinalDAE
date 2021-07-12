@@ -40,7 +40,7 @@
             });
         </script>
     </head>
-    <body>
+    <body onload="alerta('${mensaje}');">
         <div class="header">
             <div class="container">
                 <div class="row">
@@ -198,5 +198,12 @@
 
             </div>
         </div>
-    </body>	
+    </body>
+    <script type="text/javascript">
+        function alerta(mensaje) {
+            if(mensaje!=""){
+                alert(mensaje);
+            }
+        }
+    </script>
 </html>

@@ -40,7 +40,7 @@ public class RegistraUsuario extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet RegistraUsuario</title>");            
+            out.println("<title>Servlet RegistraUsuario</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet RegistraUsuario at " + request.getContextPath() + "</h1>");
@@ -77,34 +77,35 @@ public class RegistraUsuario extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
         String name, apellidos, email, password, pass2;
+        String mensaje = "";
         Usuario u;
         UsuarioDAO uDAO;
-        
+
         name = request.getParameter("nombre");
         apellidos = request.getParameter("apellido");
         email = request.getParameter("email");
-        password =  request.getParameter("password");
+        password = request.getParameter("password");
         pass2 = request.getParameter("pass2");
-        
+
         u = new Usuario();
         u.setNombre(name);
         u.setApellidos(apellidos);
         u.setEmail(email);;
         u.setPassword(password);
-        
-        try{
+
+        try {
             uDAO = new UsuarioDAO();
             uDAO.alta(u);
+            mensaje = "Registrado Correctamente";
             
-        }catch(Exception e){
-            System.out.println("Algo ocurrio mal");
+        } catch (Exception e) {
+            mensaje = ("Algo ocurrio mal " + e.getMessage());
         }
+//        request.setAttribute("mensaje", mensaje);
         RequestDispatcher dispatcher = request.getRequestDispatcher("logueado.jsp");
         dispatcher.forward(request, response);
-        
     }
 
-    
     @Override
     public String getServletInfo() {
         return "Short description";
