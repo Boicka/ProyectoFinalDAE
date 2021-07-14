@@ -133,7 +133,7 @@ and open the template in the editor.
                                     var item = response.items[i];
                                     // in production code, item.text should have the HTML entities escaped.
                                     document.getElementById("books").innerHTML += '<div class="col-md-3 shop_box">' + 
-                                                    '<a href="single.jsp?=id">'+
+                                                    '<a href="single.jsp?id='+ item.id + '">'+
                                                     '<img src="' + item.volumeInfo.imageLinks.thumbnail + '" class="img-responsive" width="310" height="410" alt="'+ item.volumeInfo.title+'">'+
                                                     '<span class="new-box">'+
                                                     '<span class="new-label">Nuevo</span>'+
